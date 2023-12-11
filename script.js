@@ -1,5 +1,5 @@
 async function getImage(day, month, year) {
-    const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${year}-${month}-${day}}`);
+    const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=TtqSxaLMTJB82inLzMKBkVPERqxVKNveF56ZKtYA&date=${year}-${month}-${day}}`);
     const data = await response.json();
     const img = document.querySelector('img');
     img.src = data.url;
